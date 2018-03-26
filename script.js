@@ -57,10 +57,6 @@ class Stopwatch {
         this.reset();
         this.print(this.time);
     }
-
-    clear(){
-        $('.results').text("");
-    }
 }
 
 function pad0(value) {
@@ -81,7 +77,3 @@ stopButton.addEventListener('click', () => stopwatch.stop());
 
 const resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', () => stopwatch.restart());
-
-const clearButton = document.getElementById('clear');
-clearButton.addEventListener('click', () => stopwatch.clear());
-
